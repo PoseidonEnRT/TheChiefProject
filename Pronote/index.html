@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakenote</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Fakenote</h1>
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Nom d'utilisateur invalide <span id="error-msg-second-line">/Mot de passe incorrect</span>
+      </p>
+    </div>
+
+    <form id="login-form">
+      <input type="text" name="utilisateur" id="username-field" class="login-form-field"
+        placeholder="Nom d'Utilisateur">
+      <input type="password" name="mdp" id="password-field" class="login-form-field" placeholder="Mot de passe">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+  </main>
+</body>
+
+</html>

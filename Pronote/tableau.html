@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fakenote tableau des élèves</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keyword" content="Convertir les données JSON en tableau HTML">
+  <link rel="stylesheet" href="styletableau.css">
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Classe</th>
+        <th>Absent Justifié</th>
+        <th>Absent Injustifié</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Danté</td>
+        <td>Joseph</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="1"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="1"></td>
+      </tr>
+      <tr>
+        <td>Marc Bendy</td>
+        <td>Jean</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="2"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="2"></td>
+      </tr>
+      <tr>
+        <td>Tétran</td>
+        <td>Teemo</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="3"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="3"></td>
+      </tr>
+      <tr>
+        <td>Atton</td>
+        <td>Olivier</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="4"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="4"></td>
+      </tr>
+      <tr>
+        <td>Lester</td>
+        <td>Moe</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="5"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="5"></td>
+      </tr>
+      <tr>
+        <td>SeRueetLent</td>
+        <td>Eli</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="6"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="6"></td>
+      </tr>
+      <tr>
+        <td>Inmorel</td>
+        <td>Rob</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="7"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="7"></td>
+      </tr>
+      <tr>
+        <td>Icher</td>
+        <td>Sachahère</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="8"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="8"></td>
+      </tr>
+      <tr>
+        <td>Naël</td>
+        <td>Natha</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="9"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="9"></td>
+      </tr>
+      <tr>
+        <td>Roche</td>
+        <td>Léola</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="10"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="10"></td>
+      </tr>
+      <tr>
+        <td>ElGollo</td>
+        <td>Alex</td>
+        <td>Groupe C</td>
+        <td><input type="checkbox" name="absentjustifie" value="11"></td>
+        <td><input type="checkbox" name="absentinjustifie[]" value="11"></td>
+      </tr>
+    </tbody>
+  </table>
+  <button onclick="downloadFilei()">Télécharger la liste des absences injustifier</button>
+  <button onclick="downloadFilej()">Télécharger la liste des absences justifier</button>
+  <script src="scriptjstableau.js"></script>
+</body>
+
+</html>
