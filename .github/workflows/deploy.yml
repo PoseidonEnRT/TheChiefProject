@@ -19,7 +19,7 @@ jobs:
       - name : Updating the website
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id : ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key : ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id : ${{ secrets.ACCESS_AWS }}
+          aws-secret-access-key : ${{ secrets.SECRET_ACCESS_AWS }}
           aws-region: eu-west-3
       - run: aws s3 sync ./website s3://amiral-site-routeur
